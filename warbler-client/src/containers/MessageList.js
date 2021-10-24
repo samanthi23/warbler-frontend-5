@@ -7,6 +7,7 @@ class MessageList extends Component {
   componentDidMount() {
     this.props.fetchMessages();
   }
+  // make a component for each message, MessageItem
   render() {
     const { messages, removeMessage } = this.props;
     let messageList = messages.map(m => (
